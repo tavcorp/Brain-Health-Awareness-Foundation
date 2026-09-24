@@ -72,11 +72,13 @@ export default function Home() {
       <header id="site-header" className={isScrolled ? 'scrolled' : ''}>
         <nav>
           <a href="#top" className="logo">
-            <span className="logo-mark" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 40 40" fill="none">
-                <path d="M2 20 L11 20 L15 8 L20 32 L25 12 L29 20 L38 20" stroke="#FF6947" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </span>
+            <img 
+              src="https://res.cloudinary.com/de3ryzm92/image/upload/v1790260389/Screenshot_2026-09-24_153219-removebg-preview_tjopv7.png" 
+              alt="" 
+              className="logo-mark" 
+              aria-hidden="true"
+              style={{ objectFit: 'contain' }}
+            />
             <span className="logo-word-full">Brain Health Awareness Foundation</span>
             <span className="logo-word-short">BHAF</span>
           </a>
@@ -506,11 +508,13 @@ export default function Home() {
           <div className="footer-top">
             <div className="footer-brand">
               <a href="#top" className="logo">
-                <span className="logo-mark" aria-hidden="true">
-                  <svg width="18" height="18" viewBox="0 0 40 40" fill="none">
-                    <path d="M2 20 L11 20 L15 8 L20 32 L25 12 L29 20 L38 20" stroke="#FF6947" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </span>
+                <img 
+                  src="https://res.cloudinary.com/de3ryzm92/image/upload/v1790260389/Screenshot_2026-09-24_153219-removebg-preview_tjopv7.png" 
+                  alt="" 
+                  className="logo-mark" 
+                  aria-hidden="true"
+                  style={{ objectFit: 'contain' }}
+                />
                 <span>Brain Health Awareness Foundation</span>
               </a>
               <p>Recognizing, protecting, and normalizing brain health, one community conversation at a time.</p>

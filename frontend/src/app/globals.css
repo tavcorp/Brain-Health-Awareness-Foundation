@@ -115,8 +115,7 @@ nav{
 }
 .logo{display:flex; align-items:center; gap:10px; font-weight:700; font-size:15px;}
 .logo-mark{
-  width:36px; height:36px; border-radius:10px;
-  background:var(--ink);
+  width:52px; height:52px; border-radius:10px;
   display:flex; align-items:center; justify-content:center;
   flex-shrink:0;
 }
