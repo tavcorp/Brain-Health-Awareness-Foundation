@@ -1,5 +1,7 @@
 "use client";
 import { useEffect, useState, useRef } from "react";
+import Link from "next/link";
+import { HOME_NEWS_ARTICLES } from "@/data/homeNewsData";
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -83,8 +85,16 @@ export default function Home() {
             <span className="logo-word-short">BHAF</span>
           </a>
           <div className="nav-links">
-            <a href="#about">About</a>
-            <a href="#programs">Programs</a>
+            <div className="nav-dropdown">
+              <button className="nav-dropdown-btn">
+                Programs 
+                <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              </button>
+              <div className="nav-dropdown-content">
+                <Link href="/about">About Us</Link>
+                <Link href="/services">Our Services</Link>
+              </div>
+            </div>
             <a href="#signs">Know the Signs</a>
             <a href="#news">News</a>
             <a href="#contact">Contact</a>
@@ -103,8 +113,8 @@ export default function Home() {
           </div>
         </nav>
         <div className={`mobile-panel ${isMenuOpen ? 'open' : ''}`} id="mobilePanel">
-          <a href="#about" onClick={closeMenu}>About</a>
-          <a href="#programs" onClick={closeMenu}>Programs</a>
+          <Link href="/about" onClick={closeMenu}>About Us</Link>
+          <Link href="/services" onClick={closeMenu}>Our Services</Link>
           <a href="#signs" onClick={closeMenu}>Know the Signs</a>
           <a href="#news" onClick={closeMenu}>News</a>
           <a href="#contact" onClick={closeMenu}>Contact</a>
@@ -169,112 +179,12 @@ export default function Home() {
                 <span>People reached through our screenings and talks</span>
               </div>
             </div>
-            <p className="stats-note">Global figures adapted from public health literature for awareness purposes. Replace with sourced, cited statistics before publishing.</p>
           </div>
         </section>
 
-        <section id="about">
-          <div className="wrap">
-            <div className="section-head">
-              <div>
-                <span className="eyebrow">About us</span>
-                <h2>A foundation built on <em> early intervention, prevention,</em> and lifelong brain health</h2>
-              </div>
-              <p className="lead">Brain Health Awareness Foundation exists to close the gap between when symptoms first appear and when someone finally asks for help. That gap is where we work.</p>
-            </div>
 
-            <div className="about-grid">
-              <div className="about-card reveal">
-                <h3>Our mission</h3>
-                <p>To make brain health a normal part of everyday conversations by promoting awareness, early recognition, and community action, so that memory loss, cognitive decline, stroke, and mental health challenges are recognized early and met with timely support—long before they become emergencies.</p>
-                <br/>
-                <h3>Our approach</h3>
-                <p>We work through community screenings, public education, caregiver support, and partnerships with local health systems, meeting people where they already are: churches, markets, schools, workplaces, and homes.</p>
-              </div>
 
-              <div className="pillar-list reveal">
-                <div className="pillar">
-                  <span className="pillar-num">01</span>
-                  <div>
-                    <h4>Recognize early</h4>
-                    <p>Early recognition can change lives. We train families, caregivers, and frontline workers to identify subtle changes in memory, mood, speech, and movement—early warning signs that are too often mistaken for normal aging.</p>
-                  </div>
-                </div>
-                <div className="pillar">
-                  <span className="pillar-num">02</span>
-                  <div>
-                    <h4>Reduce the stigma</h4>
-                    <p>Brain health is health. We create safe, supportive spaces where people can openly discuss changes in memory, thinking, mood, and mental well-being—free from stigma, shame, or fear of judgment.</p>
-                  </div>
-                </div>
-                <div className="pillar">
-                  <span className="pillar-num">03</span>
-                  <div>
-                    <h4>Reach the underserved</h4>
-                    <p>Screenings, workshops, and resources are prioritized for communities with the least access to neurology and mental health services.</p>
-                  </div>
-                </div>
-                <div className="pillar">
-                  <span className="pillar-num">04</span>
-                  <div>
-                    <h4>Rebuild after diagnosis</h4>
-                    <p>For families already living with a diagnosis, we offer caregiver circles, practical guidance, and a network so no one carries it alone.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
-        <section id="programs" style={{background: 'var(--bg-soft)'}}>
-          <div className="wrap">
-            <div className="section-head">
-              <div>
-                <span className="eyebrow">What we run</span>
-                <h2>Programs built for <em>real</em> communities.</h2>
-              </div>
-              <p className="lead">Each program answers one question: how do we get to people earlier, in language and settings they already trust?</p>
-            </div>
-
-            <div className="programs-grid">
-              <div className="program-card reveal">
-                <div className="program-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M5 5l4 4M15 15l4 4M19 5l-4 4M9 15l-4 4" stroke="#659c56" strokeWidth="1.6" strokeLinecap="round"/></svg>
-                </div>
-                <h3>Community Screenings</h3>
-                <p>Free, walk-in cognitive and mental wellness checks brought directly to neighborhoods with limited healthcare access.</p>
-                <a href="#" className="program-link">Learn more <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></svg></a>
-              </div>
-
-              <div className="program-card reveal">
-                <div className="program-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 19V5a2 2 0 012-2h9l5 5v11a2 2 0 01-2 2H6a2 2 0 01-2-2z" stroke="#24385e" strokeWidth="1.6" strokeLinejoin="round"/><path d="M8 12h8M8 16h5" stroke="#24385e" strokeWidth="1.6" strokeLinecap="round"/></svg>
-                </div>
-                <h3>Awareness Campaigns</h3>
-                <p>School talks, workplace sessions, and media partnerships that make brain health part of everyday conversation.</p>
-                <a href="#" className="program-link">Learn more <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></svg></a>
-              </div>
-
-              <div className="program-card reveal">
-                <div className="program-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="8" cy="8" r="3" stroke="#89bad5" strokeWidth="1.6"/><circle cx="17" cy="9" r="2.4" stroke="#89bad5" strokeWidth="1.6"/><path d="M2 20c0-3.3 2.7-6 6-6s6 2.7 6 6M14 20c0-2.6 1.8-4.8 4-5.5" stroke="#89bad5" strokeWidth="1.6" strokeLinecap="round"/></svg>
-                </div>
-                <h3>Caregiver Support Circles</h3>
-                <p>Peer support groups, practical training, and respite resources for families caring for someone with cognitive decline.</p>
-                <a href="#" className="program-link">Learn more <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></svg></a>
-              </div>
-
-              <div className="program-card reveal">
-                <div className="program-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 17l6-6 4 4 8-8" stroke="#659c56" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/><path d="M15 7h6v6" stroke="#659c56" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                </div>
-                <h3>Research &amp; Advocacy</h3>
-                <p>Funding local research and pushing for policy that expands access to neurological and mental health care.</p>
-                <a href="#" className="program-link">Learn more <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></svg></a>
-              </div>
-            </div>
-          </div>
-        </section>
 
         <section id="signs" className="signs-section">
           <div className="wrap">
@@ -327,39 +237,33 @@ export default function Home() {
                 <span className="eyebrow">Latest</span>
                 <h2>News &amp; <em>updates</em></h2>
               </div>
-              <a href="#" className="btn btn-ghost btn-sm">View all news</a>
+              <Link href="/news" className="btn btn-ghost btn-sm">View all news</Link>
             </div>
 
             <div className="news-grid">
-              <article className="news-card reveal">
-                <div className="news-thumb">
-                  <svg viewBox="0 0 200 120"><path d="M0,90 L30,90 L40,60 L50,110 L60,40 L70,90 L100,90 L110,70 L120,100 L130,90 L200,90" stroke="#89bad5" strokeWidth="2" fill="none" opacity="0.45"/></svg>
-                </div>
-                <span className="news-date">June 2026 &middot; Field notes</span>
-                <h3>Our first community screening reached 400 people in one weekend</h3>
-                <p>A look inside the pilot screening program and what we learned about reaching people who rarely see a neurologist.</p>
-                <a href="#" className="news-link">Read the story &rarr;</a>
-              </article>
-
-              <article className="news-card reveal">
-                <div className="news-thumb thumb-b">
-                  <svg viewBox="0 0 200 120"><path d="M0,90 L30,90 L40,60 L50,110 L60,40 L70,90 L100,90 L110,70 L120,100 L130,90 L200,90" stroke="#659c56" strokeWidth="2" fill="none" opacity="0.45"/></svg>
-                </div>
-                <span className="news-date">May 2026 &middot; Partnerships</span>
-                <h3>Foundation partners with three regional clinics on referral pathways</h3>
-                <p>New agreements make it easier to move someone from a community screening into proper clinical care within days.</p>
-                <a href="#" className="news-link">Read the story &rarr;</a>
-              </article>
-
-              <article className="news-card reveal">
-                <div className="news-thumb thumb-c">
-                  <svg viewBox="0 0 200 120"><path d="M0,90 L30,90 L40,60 L50,110 L60,40 L70,90 L100,90 L110,70 L120,100 L130,90 L200,90" stroke="#24385e" strokeWidth="2" fill="none" opacity="0.45"/></svg>
-                </div>
-                <span className="news-date">April 2026 &middot; Caregivers</span>
-                <h3>Inside our first caregiver support circle: what families told us</h3>
-                <p>Twelve families, six weeks, one honest conversation about what it actually takes to care for someone every day.</p>
-                <a href="#" className="news-link">Read the story &rarr;</a>
-              </article>
+              {HOME_NEWS_ARTICLES.filter((a) => a.showOnHome).slice(0, 3).map((article) => (
+                <article key={article.id} className="news-card reveal">
+                  <div className={`news-thumb ${article.thumbVariant || ""}`}>
+                    {article.image ? (
+                      <img src={article.image} alt={article.title} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                    ) : (
+                      <svg viewBox="0 0 200 120">
+                        <path
+                          d="M0,90 L30,90 L40,60 L50,110 L60,40 L70,90 L100,90 L110,70 L120,100 L130,90 L200,90"
+                          stroke={article.thumbVariant === "thumb-b" ? "#659c56" : article.thumbVariant === "thumb-c" ? "#24385e" : "#89bad5"}
+                          strokeWidth="2"
+                          fill="none"
+                          opacity="0.45"
+                        />
+                      </svg>
+                    )}
+                  </div>
+                  <span className="news-date">{article.date} &middot; {article.category}</span>
+                  <h3>{article.title}</h3>
+                  <p>{article.excerpt}</p>
+                  <Link href={`/news?story=${article.id}`} className="news-link">Read the story &rarr;</Link>
+                </article>
+              ))}
             </div>
           </div>
         </section>
@@ -439,21 +343,21 @@ export default function Home() {
                   <span className="icon-wrap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 7l9 6 9-6M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1z" stroke="#24385e" strokeWidth="1.6" strokeLinejoin="round"/></svg></span>
                   <div>
                     <h4>Email</h4>
-                    <p>hello@brainhealthawareness.org</p>
+                    <p>bhafoundation.org@gmail.com</p>
                   </div>
                 </div>
                 <div className="contact-info-item">
                   <span className="icon-wrap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .3 2 .6 3a2 2 0 01-.5 2L8 10a16 16 0 006 6l1.3-1.2a2 2 0 012-.5c1 .3 2 .5 3 .6a2 2 0 011.7 2.1z" stroke="#24385e" strokeWidth="1.6" strokeLinejoin="round"/></svg></span>
                   <div>
                     <h4>Phone</h4>
-                    <p>+234 000 000 0000</p>
+                    <p>+234 803 702 7190</p>
                   </div>
                 </div>
                 <div className="contact-info-item">
                   <span className="icon-wrap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 22s7-6.3 7-12a7 7 0 10-14 0c0 5.7 7 12 7 12z" stroke="#24385e" strokeWidth="1.6" strokeLinejoin="round"/><circle cx="12" cy="10" r="2.4" stroke="#24385e" strokeWidth="1.6"/></svg></span>
                   <div>
                     <h4>Office</h4>
-                    <p>Add your foundation's address here</p>
+                    <p>Sars Road, Port Harcourt, Rivers State, Nigeria.</p>
                   </div>
                 </div>
               </div>
@@ -526,9 +430,9 @@ export default function Home() {
             </div>
             <div className="footer-col">
               <h5>Explore</h5>
-              <a href="#about">About &amp; Mission</a>
-              <a href="#programs">Programs</a>
-              <a href="#news">News</a>
+              <Link href="/about">About &amp; Mission</Link>
+              <Link href="/services">Programs</Link>
+              <Link href="/news">News</Link>
               <a href="#signs">Know the Signs</a>
             </div>
             <div className="footer-col">
