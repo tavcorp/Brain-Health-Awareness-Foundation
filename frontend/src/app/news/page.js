@@ -368,7 +368,7 @@ function NewsContent() {
                     <path d="M3 3l18 18M21 3L3 21" stroke="currentColor" strokeWidth="1.6" />
                   </svg>
                 </a>
-                <a href="#" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/company/brainhealth-awareness-foundation/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
                     <rect x="3" y="9" width="4" height="12" fill="currentColor" />
                     <circle cx="5" cy="4.5" r="2" fill="currentColor" />
@@ -394,13 +394,16 @@ function NewsContent() {
             <div className="footer-col">
               <h5>Foundation</h5>
               <Link href="/#contact">Contact</Link>
-              <a href="#">Annual report</a>
-              <a href="#">Privacy policy</a>
+              <a href="mailto:bhafoundation.org@gmail.com">Annual report</a>
+              <a href="mailto:bhafoundation.org@gmail.com">Privacy policy</a>
             </div>
           </div>
           <div className="footer-bottom">
             <span>&copy; {new Date().getFullYear()} Brain Health Awareness Foundation. All rights reserved.</span>
-            <span>Registered nonprofit &middot; Placeholder registration number</span>
+            <div style={{ display: 'flex', gap: '16px', alignItems: 'center', flexWrap: 'wrap' }}>
+              <span>Registered nonprofit &middot; Placeholder registration number</span>
+              <span>Built by <a href="https://tavcorp.com" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'underline'}}>TavCorp</a></span>
+            </div>
           </div>
         </div>
       </footer>

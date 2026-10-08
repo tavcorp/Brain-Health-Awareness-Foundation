@@ -237,7 +237,7 @@ export default function ProgramsPage() {
               <div className="social-row" style={{marginTop: '20px'}}>
                 <a href="#" aria-label="Instagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" strokeWidth="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="1.6"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg></a>
                 <a href="#" aria-label="X"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M3 3l18 18M21 3L3 21" stroke="currentColor" strokeWidth="1.6"/></svg></a>
-                <a href="#" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="9" width="4" height="12" fill="currentColor"/><circle cx="5" cy="4.5" r="2" fill="currentColor"/><path d="M11 9h4v2.2c.7-1.3 2.2-2.5 4.3-2.5 3.4 0 5.7 2.1 5.7 6.5V21h-4v-5.2c0-2-0.8-3.3-2.6-3.3-1.4 0-2.3 1-2.7 1.9-.1.3-.2.7-.2 1.2V21h-4V9z" fill="currentColor"/></svg></a>
+                <a href="https://www.linkedin.com/company/brainhealth-awareness-foundation/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="9" width="4" height="12" fill="currentColor"/><circle cx="5" cy="4.5" r="2" fill="currentColor"/><path d="M11 9h4v2.2c.7-1.3 2.2-2.5 4.3-2.5 3.4 0 5.7 2.1 5.7 6.5V21h-4v-5.2c0-2-0.8-3.3-2.6-3.3-1.4 0-2.3 1-2.7 1.9-.1.3-.2.7-.2 1.2V21h-4V9z" fill="currentColor"/></svg></a>
               </div>
             </div>
             <div className="footer-col">
@@ -255,13 +255,16 @@ export default function ProgramsPage() {
             <div className="footer-col">
               <h5>Foundation</h5>
               <Link href="/#contact">Contact</Link>
-              <a href="#">Annual report</a>
-              <a href="#">Privacy policy</a>
+              <a href="mailto:bhafoundation.org@gmail.com">Annual report</a>
+              <a href="mailto:bhafoundation.org@gmail.com">Privacy policy</a>
             </div>
           </div>
           <div className="footer-bottom">
             <span>&copy; {new Date().getFullYear()} Brain Health Awareness Foundation. All rights reserved.</span>
-            <span>Registered nonprofit &middot; Placeholder registration number</span>
+            <div style={{ display: 'flex', gap: '16px', alignItems: 'center', flexWrap: 'wrap' }}>
+              <span>Registered nonprofit &middot; Placeholder registration number</span>
+              <span>Built by <a href="https://tavcorp.com" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'underline'}}>TavCorp</a></span>
+            </div>
           </div>
         </div>
       </footer>
