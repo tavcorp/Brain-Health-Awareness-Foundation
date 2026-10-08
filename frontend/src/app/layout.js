@@ -1,5 +1,9 @@
 import "./globals.css";
 
+export const viewport = {
+  themeColor: "#24385e",
+};
+
 export const metadata = {
   title: "Brain Health Awareness Foundation",
   description: "Brain Health Awareness Foundation helps people recognize, protect, and talk about brain health before crisis makes the decision for them.",

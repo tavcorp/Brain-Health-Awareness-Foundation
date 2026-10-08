@@ -226,7 +226,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="programs" style={{background: 'var(--parchment-soft)'}}>
+        <section id="programs" style={{background: 'var(--bg-soft)'}}>
           <div className="wrap">
             <div className="section-head">
               <div>
@@ -239,7 +239,7 @@ export default function Home() {
             <div className="programs-grid">
               <div className="program-card reveal">
                 <div className="program-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M5 5l4 4M15 15l4 4M19 5l-4 4M9 15l-4 4" stroke="#FF6947" strokeWidth="1.6" strokeLinecap="round"/></svg>
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M5 5l4 4M15 15l4 4M19 5l-4 4M9 15l-4 4" stroke="#659c56" strokeWidth="1.6" strokeLinecap="round"/></svg>
                 </div>
                 <h3>Community Screenings</h3>
                 <p>Free, walk-in cognitive and mental wellness checks brought directly to neighborhoods with limited healthcare access.</p>
@@ -248,7 +248,7 @@ export default function Home() {
 
               <div className="program-card reveal">
                 <div className="program-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 19V5a2 2 0 012-2h9l5 5v11a2 2 0 01-2 2H6a2 2 0 01-2-2z" stroke="#6E7F5C" strokeWidth="1.6" strokeLinejoin="round"/><path d="M8 12h8M8 16h5" stroke="#6E7F5C" strokeWidth="1.6" strokeLinecap="round"/></svg>
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 19V5a2 2 0 012-2h9l5 5v11a2 2 0 01-2 2H6a2 2 0 01-2-2z" stroke="#24385e" strokeWidth="1.6" strokeLinejoin="round"/><path d="M8 12h8M8 16h5" stroke="#24385e" strokeWidth="1.6" strokeLinecap="round"/></svg>
                 </div>
                 <h3>Awareness Campaigns</h3>
                 <p>School talks, workplace sessions, and media partnerships that make brain health part of everyday conversation.</p>
@@ -257,7 +257,7 @@ export default function Home() {
 
               <div className="program-card reveal">
                 <div className="program-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="8" cy="8" r="3" stroke="#C7B7E8" strokeWidth="1.6"/><circle cx="17" cy="9" r="2.4" stroke="#C7B7E8" strokeWidth="1.6"/><path d="M2 20c0-3.3 2.7-6 6-6s6 2.7 6 6M14 20c0-2.6 1.8-4.8 4-5.5" stroke="#C7B7E8" strokeWidth="1.6" strokeLinecap="round"/></svg>
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="8" cy="8" r="3" stroke="#89bad5" strokeWidth="1.6"/><circle cx="17" cy="9" r="2.4" stroke="#89bad5" strokeWidth="1.6"/><path d="M2 20c0-3.3 2.7-6 6-6s6 2.7 6 6M14 20c0-2.6 1.8-4.8 4-5.5" stroke="#89bad5" strokeWidth="1.6" strokeLinecap="round"/></svg>
                 </div>
                 <h3>Caregiver Support Circles</h3>
                 <p>Peer support groups, practical training, and respite resources for families caring for someone with cognitive decline.</p>
@@ -266,7 +266,7 @@ export default function Home() {
 
               <div className="program-card reveal">
                 <div className="program-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 17l6-6 4 4 8-8" stroke="#241733" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/><path d="M15 7h6v6" stroke="#241733" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 17l6-6 4 4 8-8" stroke="#659c56" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/><path d="M15 7h6v6" stroke="#659c56" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
                 </div>
                 <h3>Research &amp; Advocacy</h3>
                 <p>Funding local research and pushing for policy that expands access to neurological and mental health care.</p>
@@ -333,7 +333,7 @@ export default function Home() {
             <div className="news-grid">
               <article className="news-card reveal">
                 <div className="news-thumb">
-                  <svg viewBox="0 0 200 120"><path d="M0,90 L30,90 L40,60 L50,110 L60,40 L70,90 L100,90 L110,70 L120,100 L130,90 L200,90" stroke="#241733" strokeWidth="2" fill="none" opacity="0.35"/></svg>
+                  <svg viewBox="0 0 200 120"><path d="M0,90 L30,90 L40,60 L50,110 L60,40 L70,90 L100,90 L110,70 L120,100 L130,90 L200,90" stroke="#89bad5" strokeWidth="2" fill="none" opacity="0.45"/></svg>
                 </div>
                 <span className="news-date">June 2026 &middot; Field notes</span>
                 <h3>Our first community screening reached 400 people in one weekend</h3>
@@ -343,7 +343,7 @@ export default function Home() {
 
               <article className="news-card reveal">
                 <div className="news-thumb thumb-b">
-                  <svg viewBox="0 0 200 120"><path d="M0,90 L30,90 L40,60 L50,110 L60,40 L70,90 L100,90 L110,70 L120,100 L130,90 L200,90" stroke="#241733" strokeWidth="2" fill="none" opacity="0.35"/></svg>
+                  <svg viewBox="0 0 200 120"><path d="M0,90 L30,90 L40,60 L50,110 L60,40 L70,90 L100,90 L110,70 L120,100 L130,90 L200,90" stroke="#659c56" strokeWidth="2" fill="none" opacity="0.45"/></svg>
                 </div>
                 <span className="news-date">May 2026 &middot; Partnerships</span>
                 <h3>Foundation partners with three regional clinics on referral pathways</h3>
@@ -353,7 +353,7 @@ export default function Home() {
 
               <article className="news-card reveal">
                 <div className="news-thumb thumb-c">
-                  <svg viewBox="0 0 200 120"><path d="M0,90 L30,90 L40,60 L50,110 L60,40 L70,90 L100,90 L110,70 L120,100 L130,90 L200,90" stroke="#241733" strokeWidth="2" fill="none" opacity="0.35"/></svg>
+                  <svg viewBox="0 0 200 120"><path d="M0,90 L30,90 L40,60 L50,110 L60,40 L70,90 L100,90 L110,70 L120,100 L130,90 L200,90" stroke="#24385e" strokeWidth="2" fill="none" opacity="0.45"/></svg>
                 </div>
                 <span className="news-date">April 2026 &middot; Caregivers</span>
                 <h3>Inside our first caregiver support circle: what families told us</h3>
@@ -423,7 +423,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact" style={{background: 'var(--parchment-soft)'}}>
+        <section id="contact" style={{background: 'var(--bg-soft)'}}>
           <div className="wrap">
             <div className="section-head">
               <div>
@@ -436,21 +436,21 @@ export default function Home() {
             <div className="contact-grid">
               <div className="reveal">
                 <div className="contact-info-item">
-                  <span className="icon-wrap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 7l9 6 9-6M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1z" stroke="#241733" strokeWidth="1.6" strokeLinejoin="round"/></svg></span>
+                  <span className="icon-wrap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 7l9 6 9-6M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1z" stroke="#24385e" strokeWidth="1.6" strokeLinejoin="round"/></svg></span>
                   <div>
                     <h4>Email</h4>
                     <p>hello@brainhealthawareness.org</p>
                   </div>
                 </div>
                 <div className="contact-info-item">
-                  <span className="icon-wrap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .3 2 .6 3a2 2 0 01-.5 2L8 10a16 16 0 006 6l1.3-1.2a2 2 0 012-.5c1 .3 2 .5 3 .6a2 2 0 011.7 2.1z" stroke="#241733" strokeWidth="1.6" strokeLinejoin="round"/></svg></span>
+                  <span className="icon-wrap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .3 2 .6 3a2 2 0 01-.5 2L8 10a16 16 0 006 6l1.3-1.2a2 2 0 012-.5c1 .3 2 .5 3 .6a2 2 0 011.7 2.1z" stroke="#24385e" strokeWidth="1.6" strokeLinejoin="round"/></svg></span>
                   <div>
                     <h4>Phone</h4>
                     <p>+234 000 000 0000</p>
                   </div>
                 </div>
                 <div className="contact-info-item">
-                  <span className="icon-wrap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 22s7-6.3 7-12a7 7 0 10-14 0c0 5.7 7 12 7 12z" stroke="#241733" strokeWidth="1.6" strokeLinejoin="round"/><circle cx="12" cy="10" r="2.4" stroke="#241733" strokeWidth="1.6"/></svg></span>
+                  <span className="icon-wrap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 22s7-6.3 7-12a7 7 0 10-14 0c0 5.7 7 12 7 12z" stroke="#24385e" strokeWidth="1.6" strokeLinejoin="round"/><circle cx="12" cy="10" r="2.4" stroke="#24385e" strokeWidth="1.6"/></svg></span>
                   <div>
                     <h4>Office</h4>
                     <p>Add your foundation's address here</p>
