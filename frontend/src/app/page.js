@@ -116,9 +116,9 @@ export default function Home() {
         <section className="hero">
           <div className="wrap hero-grid">
             <div className="reveal in">
-              <span className="eyebrow">Brain Health Awareness Foundation</span>
-              <h1>Long before memory fades, the signs are already <em>speaking</em>.</h1>
-              <p className="hero-sub">We help communities recognize, protect, and talk about brain health before crisis makes the decision for them. Awareness first. Prevention always. Support without shame.</p>
+              <span className="eyebrow">BrainHealth Awareness Foundation</span>
+              <h1>The brain speaks long before memory fades <em>recognize the early signs, act early.</em></h1>
+              <p className="hero-sub">We empower communities to recognize the early signs of brain health conditions, protect cognitive well-being, and foster open conversations before a crisis occurs. Awareness first. Prevention always. Support without stigma.</p>
               <div className="hero-ctas">
                 <a href="#donate" className="btn btn-primary">Support the mission</a>
                 <a href="#programs" className="btn btn-ghost">See our programs</a>
@@ -132,7 +132,7 @@ export default function Home() {
             <div className="hero-visual reveal in">
               <div className="hero-visual-top">
                 <span className="eyebrow">Live awareness</span>
-                <p>Every screening, every conversation, every shared symptom is a chance to catch something early.</p>
+                <p>Every campaign, every conversation, and every shared symptom is an opportunity for early intervention.</p>
               </div>
               <div className="hero-wave-wrap">
                 <svg className="hero-wave-svg" viewBox="0 0 400 90" preserveAspectRatio="none" style={{width: '100%', height: 'auto', overflow: 'visible'}}>
@@ -178,7 +178,7 @@ export default function Home() {
             <div className="section-head">
               <div>
                 <span className="eyebrow">About us</span>
-                <h2>A foundation built on <em>early conversations</em>, not late diagnoses.</h2>
+                <h2>A foundation built on <em> early intervention, prevention,</em> and lifelong brain health</h2>
               </div>
               <p className="lead">Brain Health Awareness Foundation exists to close the gap between when symptoms first appear and when someone finally asks for help. That gap is where we work.</p>
             </div>
@@ -186,7 +186,7 @@ export default function Home() {
             <div className="about-grid">
               <div className="about-card reveal">
                 <h3>Our mission</h3>
-                <p>To make brain health a normal, early, and community-level conversation, so that memory loss, cognitive decline, stroke, and mental strain are met with recognition and support long before they become emergencies.</p>
+                <p>To make brain health a normal part of everyday conversations by promoting awareness, early recognition, and community action, so that memory loss, cognitive decline, stroke, and mental health challenges are recognized early and met with timely support—long before they become emergencies.</p>
                 <br/>
                 <h3>Our approach</h3>
                 <p>We work through community screenings, public education, caregiver support, and partnerships with local health systems, meeting people where they already are: churches, markets, schools, workplaces, and homes.</p>
@@ -197,14 +197,14 @@ export default function Home() {
                   <span className="pillar-num">01</span>
                   <div>
                     <h4>Recognize early</h4>
-                    <p>We teach families and frontline workers to notice subtle changes in memory, mood, speech, and movement, the signs that usually get dismissed as "just getting older."</p>
+                    <p>Early recognition can change lives. We train families, caregivers, and frontline workers to identify subtle changes in memory, mood, speech, and movement—early warning signs that are too often mistaken for normal aging.</p>
                   </div>
                 </div>
                 <div className="pillar">
                   <span className="pillar-num">02</span>
                   <div>
                     <h4>Reduce the stigma</h4>
-                    <p>Brain health is health. We create safe spaces where people can talk about cognitive change and mental strain without shame or fear of judgment.</p>
+                    <p>Brain health is health. We create safe, supportive spaces where people can openly discuss changes in memory, thinking, mood, and mental well-being—free from stigma, shame, or fear of judgment.</p>
                   </div>
                 </div>
                 <div className="pillar">
