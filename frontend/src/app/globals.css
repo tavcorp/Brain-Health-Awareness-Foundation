@@ -1020,7 +1020,7 @@ footer{padding:64px 0 40px; background:#fff;}
   .nav-links, .nav-cta .btn-ghost{display:none;}
   .burger{display:flex;}
   .logo-word-full{display:none;}
-  .logo-word-short{display:inline;}
+  .logo-word-short{display:none;}
   section{padding:64px 0;}
   .hero{padding:32px 0 20px;}
   .hero-ctas{flex-direction:column; align-items:stretch;}

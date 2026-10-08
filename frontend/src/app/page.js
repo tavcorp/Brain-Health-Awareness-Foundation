@@ -85,16 +85,7 @@ export default function Home() {
             <span className="logo-word-short">BHAF</span>
           </a>
           <div className="nav-links">
-            <div className="nav-dropdown">
-              <button className="nav-dropdown-btn">
-                Programs 
-                <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-              </button>
-              <div className="nav-dropdown-content">
-                <Link href="/about">About Us</Link>
-                <Link href="/services">Our Services</Link>
-              </div>
-            </div>
+            <Link href="/programs">Programs</Link>
             <a href="#signs">Know the Signs</a>
             <a href="#news">News</a>
             <a href="#contact">Contact</a>
@@ -113,8 +104,7 @@ export default function Home() {
           </div>
         </nav>
         <div className={`mobile-panel ${isMenuOpen ? 'open' : ''}`} id="mobilePanel">
-          <Link href="/about" onClick={closeMenu}>About Us</Link>
-          <Link href="/services" onClick={closeMenu}>Our Services</Link>
+          <Link href="/programs" onClick={closeMenu}>Programs</Link>
           <a href="#signs" onClick={closeMenu}>Know the Signs</a>
           <a href="#news" onClick={closeMenu}>News</a>
           <a href="#contact" onClick={closeMenu}>Contact</a>
@@ -185,6 +175,58 @@ export default function Home() {
 
 
 
+
+        <section id="programs" style={{ background: 'var(--bg-soft)', padding: '80px 0' }}>
+          <div className="wrap">
+            <div className="section-head">
+              <div>
+                <span className="eyebrow">What we run</span>
+                <h2>Programs built for <em>real</em> communities.</h2>
+              </div>
+              <p className="lead">Each program answers one question: how do we get to people earlier, in language and settings they already trust?</p>
+            </div>
+
+            <div className="programs-grid">
+              <div className="program-card reveal">
+                <div className="program-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M5 5l4 4M15 15l4 4M19 5l-4 4M9 15l-4 4" stroke="#659c56" strokeWidth="1.6" strokeLinecap="round"/></svg>
+                </div>
+                <h3>Community Screenings</h3>
+                <p>Free, walk-in cognitive and mental wellness checks delivered directly to underserved neighborhoods with limited healthcare access. These screenings help identify potential early signs of memory loss, cognitive decline, stress, anxiety, and other mental health concerns.</p>
+              </div>
+
+              <div className="program-card reveal">
+                <div className="program-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 19V5a2 2 0 012-2h9l5 5v11a2 2 0 01-2 2H6a2 2 0 01-2-2z" stroke="#24385e" strokeWidth="1.6" strokeLinejoin="round"/><path d="M8 12h8M8 16h5" stroke="#24385e" strokeWidth="1.6" strokeLinecap="round"/></svg>
+                </div>
+                <h3>Awareness Campaigns</h3>
+                <p>School talks, workplace sessions, community outreaches, and media partnerships designed to make brain health and mental wellness part of everyday conversation. Through educational workshops, public discussions, and digital content.</p>
+              </div>
+
+              <div className="program-card reveal">
+                <div className="program-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="8" cy="8" r="3" stroke="#89bad5" strokeWidth="1.6"/><circle cx="17" cy="9" r="2.4" stroke="#89bad5" strokeWidth="1.6"/><path d="M2 20c0-3.3 2.7-6 6-6s6 2.7 6 6M14 20c0-2.6 1.8-4.8 4-5.5" stroke="#89bad5" strokeWidth="1.6" strokeLinecap="round"/></svg>
+                </div>
+                <h3>Caregiver Support Circles</h3>
+                <p>Peer support groups, practical training, and respite resources for families and individuals caring for loved ones experiencing cognitive decline or related neurological conditions. These circles provide safe spaces for caregivers to share experiences.</p>
+              </div>
+
+              <div className="program-card reveal">
+                <div className="program-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 17l6-6 4 4 8-8" stroke="#659c56" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/><path d="M15 7h6v6" stroke="#659c56" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                </div>
+                <h3>Advocacy & Partnerships</h3>
+                <p>Collaborating with local healthcare providers, policymakers, community leaders, and other organizations to improve mental and neurological care access. By building strategic partnerships, we amplify our impact and influence policies.</p>
+              </div>
+            </div>
+
+            <div className="reveal" style={{ marginTop: '40px', textAlign: 'center' }}>
+              <Link href="/programs" className="btn btn-ghost" style={{ display: 'inline-block' }}>
+                Read more about our work &rarr;
+              </Link>
+            </div>
+          </div>
+        </section>
 
         <section id="signs" className="signs-section">
           <div className="wrap">
@@ -317,12 +359,12 @@ export default function Home() {
 
             <div className="donate-panel reveal">
               <h3>Give securely</h3>
-              <p>Payments are processed through Paystack. This button is a placeholder until the payment integration is connected.</p>
+              <p>Your transaction is completely safe. Select an amount above to support our mission of advancing brain health awareness and education.</p>
               <button className="paystack-btn" onClick={() => alert('Paystack integration goes here. This button is a placeholder until the payment gateway is connected.')}>
                 Donate via Paystack
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" strokeWidth="2" strokeLinecap="round"/></svg>
               </button>
-              <p className="donate-note">Bank transfer and other regional payment options can be added here once finalized.</p>
+              <p className="donate-note">We securely accept local and international cards, bank transfers, and mobile money.</p>
             </div>
           </div>
         </section>
@@ -430,8 +472,7 @@ export default function Home() {
             </div>
             <div className="footer-col">
               <h5>Explore</h5>
-              <Link href="/about">About &amp; Mission</Link>
-              <Link href="/services">Programs</Link>
+              <Link href="/programs">Programs &amp; Mission</Link>
               <Link href="/news">News</Link>
               <a href="#signs">Know the Signs</a>
             </div>

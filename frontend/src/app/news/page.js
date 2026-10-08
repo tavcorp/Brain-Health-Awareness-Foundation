@@ -88,16 +88,7 @@ function NewsContent() {
           </Link>
           <div className="nav-links">
             <Link href="/">Home</Link>
-            <div className="nav-dropdown">
-              <button className="nav-dropdown-btn">
-                Programs 
-                <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-              </button>
-              <div className="nav-dropdown-content">
-                <Link href="/about">About Us</Link>
-                <Link href="/services">Our Services</Link>
-              </div>
-            </div>
+            <Link href="/programs">Programs</Link>
             <Link href="/#signs">Know the Signs</Link>
             <Link href="/news" style={{ color: "var(--green-deep)", fontWeight: 700 }}>
               News
@@ -127,11 +118,8 @@ function NewsContent() {
           <Link href="/" onClick={() => setIsMenuOpen(false)}>
             Home
           </Link>
-          <Link href="/about" onClick={() => setIsMenuOpen(false)}>
-            About Us
-          </Link>
-          <Link href="/services" onClick={() => setIsMenuOpen(false)}>
-            Our Services
+          <Link href="/programs" onClick={() => setIsMenuOpen(false)}>
+            Programs
           </Link>
           <Link href="/#signs" onClick={() => setIsMenuOpen(false)}>
             Know the Signs
@@ -350,18 +338,6 @@ function NewsContent() {
         </div>
       )}
 
-      <section className="newsletter">
-        <div className="wrap newsletter-inner">
-          <div>
-            <h3>Stay close to the work</h3>
-            <p>One email a month. Screening dates, stories from the field, and small ways to help.</p>
-          </div>
-          <form className="newsletter-form" onSubmit={handleNewsletterSubmit}>
-            <input type="email" placeholder="you@email.com" required />
-            <button type="submit" className="btn btn-primary">{newsletterStatus}</button>
-          </form>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer>
@@ -403,8 +379,7 @@ function NewsContent() {
             </div>
             <div className="footer-col">
               <h5>Explore</h5>
-              <Link href="/about">About &amp; Mission</Link>
-              <Link href="/services">Programs</Link>
+              <Link href="/programs">Programs &amp; Mission</Link>
               <Link href="/news" style={{ color: "var(--green-deep)", fontWeight: 600 }}>
                 News &amp; Updates
               </Link>

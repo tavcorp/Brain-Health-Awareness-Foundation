@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
-export default function ServicesPage() {
+export default function ProgramsPage() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [newsletterStatus, setNewsletterStatus] = useState("Subscribe");
@@ -53,8 +53,7 @@ export default function ServicesPage() {
             <span className="logo-word-short">BHAF</span>
           </Link>
           <div className="nav-links">
-            <Link href="/#about">About</Link>
-            <Link href="/services">Services</Link>
+            <Link href="/programs" style={{ color: "var(--green-deep)", fontWeight: 700 }}>Programs</Link>
             <Link href="/#signs">Know the Signs</Link>
             <Link href="/news">News</Link>
             <Link href="/#contact">Contact</Link>
@@ -78,11 +77,8 @@ export default function ServicesPage() {
           <Link href="/" onClick={() => setIsMenuOpen(false)}>
             Home
           </Link>
-          <Link href="/#about" onClick={() => setIsMenuOpen(false)}>
-            About
-          </Link>
-          <Link href="/services" onClick={() => setIsMenuOpen(false)} style={{ color: "var(--green-deep)" }}>
-            Services
+          <Link href="/programs" onClick={() => setIsMenuOpen(false)} style={{ color: "var(--green-deep)" }}>
+            Programs
           </Link>
           <Link href="/#signs" onClick={() => setIsMenuOpen(false)}>
             Know the Signs
@@ -100,6 +96,69 @@ export default function ServicesPage() {
       </header>
 
       <main>
+        <section className="news-hero">
+          <div className="wrap">
+            <h1 className="news-hero-title">
+              Our <em>Programs</em> &amp; Mission
+            </h1>
+            <p className="news-hero-sub">
+              Brain Health Awareness Foundation exists to close the gap between when symptoms first appear and when someone finally asks for help. That gap is where we work.
+            </p>
+          </div>
+        </section>
+
+        <section id="about" style={{ padding: '60px 0 80px' }}>
+          <div className="wrap">
+            <div className="section-head">
+              <div>
+                <span className="eyebrow">Our Foundation</span>
+                <h2>A foundation built on <em> early intervention, prevention,</em> and lifelong brain health</h2>
+              </div>
+            </div>
+
+            <div className="about-grid">
+              <div className="about-card reveal">
+                <h3>Our mission</h3>
+                <p>To make brain health a normal part of everyday conversations by promoting awareness, early recognition, and community action, so that memory loss, cognitive decline, stroke, and mental health challenges are recognized early and met with timely support—long before they become emergencies.</p>
+                <br/>
+                <h3>Our approach</h3>
+                <p>We work through community screenings, public education, caregiver support, and partnerships with local health systems, meeting people where they already are: churches, markets, schools, workplaces, and homes.</p>
+              </div>
+
+              <div className="pillar-list reveal">
+                <div className="pillar">
+                  <span className="pillar-num">01</span>
+                  <div>
+                    <h4>Recognize early</h4>
+                    <p>Early recognition can change lives. We train families, caregivers, and frontline workers to identify subtle changes in memory, mood, speech, and movement—early warning signs that are too often mistaken for normal aging.</p>
+                  </div>
+                </div>
+                <div className="pillar">
+                  <span className="pillar-num">02</span>
+                  <div>
+                    <h4>Reduce the stigma</h4>
+                    <p>Brain health is health. We create safe, supportive spaces where people can openly discuss changes in memory, thinking, mood, and mental well-being—free from stigma, shame, or fear of judgment.</p>
+                  </div>
+                </div>
+                <div className="pillar">
+                  <span className="pillar-num">03</span>
+                  <div>
+                    <h4>Reach the underserved</h4>
+                    <p>Screenings, workshops, and resources are prioritized for communities with the least access to neurology and mental health services.</p>
+                  </div>
+                </div>
+                <div className="pillar">
+                  <span className="pillar-num">04</span>
+                  <div>
+                    <h4>Rebuild after diagnosis</h4>
+                    <p>For families already living with a diagnosis, we offer caregiver circles, practical guidance, and a network so no one carries it alone.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="programs" style={{ background: 'var(--bg-soft)', paddingTop: '60px', paddingBottom: '80px' }}>
           <div className="wrap">
             <div className="section-head">
@@ -139,12 +198,13 @@ export default function ServicesPage() {
                 <div className="program-icon">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 17l6-6 4 4 8-8" stroke="#659c56" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/><path d="M15 7h6v6" stroke="#659c56" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
                 </div>
-                <h3>Research &amp; Advocacy</h3>
-                <p>Supporting local research and advocating for policies that expand access to neurological and mental healthcare. We aim to strengthen understanding of cognitive decline and mental health challenges within underserved communities by encouraging research, partnerships with healthcare institutions, and evidence-based interventions. Through stakeholder engagement, public education, and collaboration with policymakers, we champion affordable screening, early diagnosis, improved treatment access, and stronger support systems. Our goal is to influence sustainable healthcare solutions that address community needs and improve outcomes for individuals and families</p>
+                <h3>Advocacy & Partnerships</h3>
+                <p>Collaborating with local healthcare providers, policymakers, community leaders, and other organizations to improve mental and neurological care access. By building strategic partnerships, we amplify our impact, influence policies that support brain health, and create a stronger, more integrated support network for those affected. Our advocacy efforts aim to prioritize brain health on the public health agenda and ensure that vulnerable populations receive the care and resources they deserve.</p>
               </div>
             </div>
           </div>
         </section>
+
         <section className="newsletter">
           <div className="wrap newsletter-inner">
             <div>
@@ -182,8 +242,7 @@ export default function ServicesPage() {
             </div>
             <div className="footer-col">
               <h5>Explore</h5>
-              <Link href="/about">About &amp; Mission</Link>
-              <Link href="/services">Programs</Link>
+              <Link href="/programs">Programs &amp; Mission</Link>
               <Link href="/news">News</Link>
               <Link href="/#signs">Know the Signs</Link>
             </div>
